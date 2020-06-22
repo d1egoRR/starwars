@@ -16,9 +16,9 @@ python manage.py runserver
 ## Probar los endpoints:
 
 **1 - Obtener info del personaje:**
-'''
+```
 GET http://localhost:8000/api/character/1
-'''
+```
 
 **2 - Agregar puntuación a un personaje:**
 ```
