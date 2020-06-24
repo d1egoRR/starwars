@@ -15,12 +15,17 @@ python manage.py runserver
 
 ## Probar los endpoints:
 
-**1 - Obtener info del personaje:**
+**1 - Swagger:**
+```
+http://localhost:8000
+```
+
+**2 - Obtener info del personaje:**
 ```
 GET http://localhost:8000/api/character/1
 ```
 
-**2 - Agregar puntuación a un personaje:**
+**3 - Agregar puntuación a un personaje:**
 ```
 POST http://localhost:8000/api/character/1/rating
 
