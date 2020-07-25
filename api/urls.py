@@ -1,17 +1,13 @@
 from django.urls import path
 
-from .apiviews import CharacterAPIView
+from .apiviews import character_info, character_rating
 
 
 urlpatterns = [
-    path(
-        'character/<int:character_id>/',
-        CharacterAPIView.as_view(),
-        name='character'
-    ),
+    path('character/<int:character_id>/', character_info, name='character'),
     path(
         'character/<int:character_id>/rating/',
-        CharacterAPIView.as_view(),
+        character_rating,
         name='character-rating'
     ),
 ]

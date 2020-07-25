@@ -6,7 +6,7 @@ from rest_framework.test import APITestCase
 from api.models import CharacterRating
 
 
-class CharacterAPIViewTestCase(APITestCase):
+class CharacterInfoTestCase(APITestCase):
 
     def test_get(self):
         # context
@@ -22,6 +22,9 @@ class CharacterAPIViewTestCase(APITestCase):
         self.assertEqual('Luke Skywalker', data['name'])
         self.assertEqual(4.0, data['average_rating'])
         self.assertEqual(5, data['max_rating'])
+
+
+class CharacterRatingTestCase(APITestCase):
 
     def test_post_ok(self):
         params = {'rating': 2}
